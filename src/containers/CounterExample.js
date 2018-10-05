@@ -9,9 +9,11 @@ import {
   decrementAsync
 } from '../actions/counterActions';
 
-const Home = props => (
-  <div>
-    <h1>Home</h1>
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+const CounterExample = props => (
+  <div className='container'>
+    <h1>Counter Example</h1>
     <p>Count: {props.count}</p>
 
     <p>
@@ -57,4 +59,4 @@ const mapDispatchToProps = dispatch =>
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(Home)
+)(CounterExample)
