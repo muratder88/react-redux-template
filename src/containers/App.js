@@ -1,5 +1,7 @@
 import React from 'react'
-import { Route, Link } from 'react-router-dom'
+import { Route, Link } from 'react-router-dom';
+import {hot} from 'react-hot-loader';
+
 import Home from './Home'
 import About from './About'
 
@@ -17,4 +19,4 @@ const App = () => (
   </div>
 )
 
-export default App
+export default hot(module)(App)
